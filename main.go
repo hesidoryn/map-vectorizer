@@ -13,6 +13,7 @@ func main() {
 	image := os.Args[1]
 	pointsJSON := os.Args[2]
 
+	createFolderStructure()
 	clear()
 
 	// STEP 1: Text detecting

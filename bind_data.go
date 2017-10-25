@@ -144,10 +144,7 @@ func addData(m metadata, shpName string) error {
 		shp.FloatField("area", 25, 4),
 		shp.StringField("fill", 25),
 	}
-	if m.Number == "450" {
-		fmt.Println(m.Area)
-		fmt.Println(m.Acidity)
-	}
+
 	newshape.SetFields(newfields)
 	for shape.Next() {
 		n, p := shape.Shape()

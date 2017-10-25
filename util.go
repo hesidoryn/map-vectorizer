@@ -15,6 +15,19 @@ func checkErr(err error) {
 	}
 }
 
+func createFolderStructure() {
+	_ = os.Mkdir("images/green", os.ModePerm)
+	_ = os.Mkdir("images/ocean", os.ModePerm)
+	_ = os.Mkdir("images/yellow", os.ModePerm)
+	_ = os.Mkdir("images/orange", os.ModePerm)
+	_ = os.Mkdir("output/translated", os.ModePerm)
+	_ = os.Mkdir("output/warped", os.ModePerm)
+	_ = os.Mkdir("output/shapefiles", os.ModePerm)
+	_ = os.Mkdir("result/shapefile", os.ModePerm)
+	_ = os.Mkdir("result/json", os.ModePerm)
+	_ = os.Mkdir("result/kml", os.ModePerm)
+}
+
 func clear() {
 	log.Println("Removing old files...")
 	err := removeContents("images/green")
