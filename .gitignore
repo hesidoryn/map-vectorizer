@@ -1,0 +1,12 @@
+creds/*
+images/green/*
+images/ocean/*
+images/orange/*
+images/yellow/*
+output/shapefiles/*
+output/translated/*
+output/warped/*
+result/shapefile/*
+result/json/*
+result/kml/*
+vctrzr
